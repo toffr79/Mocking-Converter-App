@@ -1,4 +1,8 @@
 {% extends "main_container.html" %}
 {% block content %}
   <h1>Mocking Converter Application</h1>
+  <form action="{{ url_for('converted_phrase')}}">
+    <textarea rows="5" name="original_string" placeholder="Enter your sentence here..."></textarea>
+    <input type="submit" value="Submit">
+  </form>
 {% endblock %}
