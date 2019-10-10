@@ -24,5 +24,8 @@
   position: absolute;
   left: 10%;
   top: 5%;
+  font-size: 25px;
+  max-width: 300px;
   font-weight: bold;
+  color: #333;
 }

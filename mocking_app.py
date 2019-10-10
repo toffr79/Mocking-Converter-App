@@ -4,8 +4,6 @@
 # Description: App to convert an input string into camelcasing
 # --so that it is output similar to the Spongebob mocking meme
 
-
-########### CONVERT temp.py TO FLASK APP ###########
 # Import flask modules
 from flask import Flask, render_template, redirect, request, flash, session, url_for
 from flask_wtf import FlaskForm
