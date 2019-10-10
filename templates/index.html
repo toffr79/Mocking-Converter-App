@@ -1,8 +1,21 @@
 {% extends "main_container.html" %}
 {% block content %}
-  <h1>Mocking Converter Application</h1>
-  <form action="{{ url_for('converted_phrase')}}">
-    <textarea rows="5" name="original_string" placeholder="Enter your sentence here..."></textarea>
-    <input type="submit" value="Submit">
+  <h1 class="title">Sass-O-Matic</h1>
+  <form method="POST">
+    <div class="form-group">
+      {{ form.hidden_tag() }}
+      {{ form.original_string.label }}
+      {{ form.original_string(class_='form-control', rows='5') }}
+    </div>
+    {{ form.submit(class_='btn btn-primary') }}
   </form>
+
+  {% for mess in get_flashed_messages() %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <button type="button" class="fade close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      {{ mess }}
+    </div>
+  {% endfor %}
 {% endblock %}
