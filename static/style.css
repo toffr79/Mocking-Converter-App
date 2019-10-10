@@ -1,4 +1,28 @@
+#wrapper {
+  background-color: #eeeeee;
+  height: 100vh
+}
+
 .title {
   color: Blue;
   text-align: center;
+}
+
+.container {
+  padding: 10px 0%;
+}
+
+/*.alert {
+  background-color: #6688dd;
+}*/
+
+.img-sass {
+  position: relative;
+}
+
+.converted_message {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  font-weight: bold;
 }
