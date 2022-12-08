@@ -2,7 +2,7 @@
 # Usage: pip install -r requirements.txt
 
 alembic==1.1.0
-certifi==2019.6.16
+certifi==2022.12.7
 Click==7.0
 Flask==1.1.1
 Flask-Migrate==2.5.2
